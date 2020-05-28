@@ -27,7 +27,7 @@ myButton.onclick = function() {
     errorIcon.style.visibility = "visible";
     myInput.setCustomValidity(" ");
   } else {
-    errorMessage.textContent="Success";
+    errorMessage.textContent="";
     errorMessage.style.visibility = "visible";
     errorIcon.style.visibility = "hidden";
     myInput.setCustomValidity(" ");
