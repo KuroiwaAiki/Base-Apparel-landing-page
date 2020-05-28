@@ -15,6 +15,15 @@ body  {
   text-align: center;
 }
 
+.page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.wrapper {
+  padding-bottom: 8vw;
+}
+
 h1 {
     font-weight: 300;
     font-size: 2.4rem;
@@ -149,7 +158,10 @@ input:-webkit-autofill {
 /* footer */
 
 footer {
-  margin: 1rem auto;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin:auto ;
 }
 
 .attribution {
@@ -160,6 +172,11 @@ footer {
 }
 
 /* large screen sizes */
+
+.page-container {
+  position: relative;
+  min-height: 100vh;
+}
 
 @media only screen and (min-width: 1000px) {
 
@@ -187,11 +204,10 @@ footer {
   }
 
   .wrapper {
-    max-width: 1440px;
-    height: 790px;
+    width: 100%;
     background-image: url("../images/bg-pattern-desktop.svg");
-    background-repeat: no-repeat;
     background-size: contain;
+    height: 100vh;
   }
 
 /* header section */
@@ -255,8 +271,10 @@ h1, h2 {
 /* footer */
 
 footer {
-  margin: 0 auto;
-  }
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin: auto;
 }
 
 /* tablet sizes */
