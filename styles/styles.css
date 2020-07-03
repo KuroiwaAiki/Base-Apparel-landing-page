@@ -16,6 +16,8 @@ body  {
 }
 
 .page-container {
+  display: flex;
+  flex-direction: column;
   position: relative;
   min-height: 100vh;
 }
@@ -173,11 +175,6 @@ footer {
 
 /* large screen sizes */
 
-.page-container {
-  position: relative;
-  min-height: 100vh;
-}
-
 @media only screen and (min-width: 1000px) {
 
   .flex-container {
@@ -197,7 +194,6 @@ footer {
   }
 
   .main-picture-container {
-    display: inline-block;
     float: right;
     max-width: 45%;
     overflow: hidden;
@@ -206,8 +202,7 @@ footer {
   .wrapper {
     width: 100%;
     background-image: url("../images/bg-pattern-desktop.svg");
-    background-size: contain;
-    height: 100vh;
+    background-size: cover;
   }
 
 /* header section */
@@ -277,10 +272,4 @@ footer {
   margin: auto;
 }
 
-/* tablet sizes */
-
-@media only screen and (max-width: 1000px) and (min-width: 650px) {
-    .mobile-picture-container {
-      max-width: 70%;
-    }
 }
